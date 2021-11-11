@@ -7,7 +7,7 @@ let urlRandom = "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1";
 
 async function loadPokemon(url) {
   try {
-    $main.innerHTML = `<img class="loader" src="assets/loader.svg" alt="Loading...">`;
+    $main.innerHTML = `<img class="loader" src="../assets/loader.svg" alt="Loading...">`;
     let response = await fetch(url),
       json = await response.json(),
       $template = "",
