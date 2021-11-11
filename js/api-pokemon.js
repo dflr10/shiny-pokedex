@@ -29,7 +29,6 @@ async function loadPokemon(url) {
         $template += `
         <figure>
         <img src="${pokemon.sprites.front_shiny}" alt="${pokemon.name}">
-        <figcaption>${pokemon.name}</figcaption>
         </figure>
         `;
       } catch (error) {
@@ -59,12 +58,9 @@ async function loadPokemon(url) {
 
 async function loadRandomPokemon(url) {
   try {
-    $main.innerHTML = `<img class="loader" src="assets/loader.svg" alt="Loading...">`;
     let response = await fetch(url),
       json = await response.json(),
-      $template = "",
-      $prevLink,
-      $nextLink;
+      $template = "";
 
     console.log(json);
 
