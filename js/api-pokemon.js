@@ -19,7 +19,7 @@ function capitalize(word) {
 
 async function loadRandomPokemon(url) {
   try {
-    $main.innerHTML = `<img class="loader" src="../assets/loader.svg" alt="Loading...">`;
+    $main.innerHTML = `<img class="loader" src="./assets/loader.svg" alt="Loading...">`;
     let response = await fetch(url),
       json = await response.json(),
       $template = "";
@@ -88,7 +88,7 @@ async function loadRandomPokemon(url) {
 
 async function loadPokemon(url) {
   try {
-    $main.innerHTML = `<img class="loader" src="../assets/loader.svg" alt="Loading...">`;
+    $main.innerHTML = `<img class="loader" src="./assets/loader.svg" alt="Loading...">`;
     let response = await fetch(url),
       json = await response.json(),
       $template = "",
