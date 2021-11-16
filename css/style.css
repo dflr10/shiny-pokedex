@@ -54,9 +54,9 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 14rem);
   margin: auto;
   width: 20%;
+  height: 100%;
 }
 
 .container {
@@ -104,7 +104,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: -4rem;
 }
 
 .pokeimage {
@@ -142,6 +141,7 @@ h3 {
   transform: translateY(-0.5px) scale(1.05);
   cursor: pointer;
 }
+
 /* MEDIA QUERY CONTROL */
 @media screen and (max-width: 320px) {
   .others {
@@ -153,7 +153,42 @@ h3 {
     grid-template-columns: repeat(2, 50%);
   }
 
-  .main {
-    flex-direction: column;
+  html {
+    text-align: center;
+    background: url(https://www.wallpaperuse.com/wallp/81-813527_m.png)
+      no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .pokeimage {
+    margin-bottom: -3rem;
+  }
+}
+@media screen and (min-width: 611px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .item {
+    padding: 0.2rem;
+  }
+  .figure {
+    display: flex;
+    flex-direction: rowy;
+    align-items: center;
+    justify-content: center;
+  }
+  .info {
+    width: 20%;
+    height: auto;
+    margin: 1rem;
+    padding: 1.3rem;
+  }
+  .item-1,
+  .item-2 {
+    padding: 0.25rem;
   }
 }
