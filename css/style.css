@@ -143,12 +143,7 @@ h3 {
 }
 
 /* MEDIA QUERY CONTROL */
-@media screen and (max-width: 320px) {
-  .others {
-    grid-template-columns: repeat(2, 50%);
-  }
-}
-@media screen and (max-width: 610px) {
+@media (min-width: 320px) and (max-width: 610px) {
   .others {
     grid-template-columns: repeat(2, 50%);
   }
@@ -165,6 +160,10 @@ h3 {
   }
 }
 @media screen and (min-width: 611px) {
+  .main {
+    height: 59vh;
+  }
+
   .container {
     display: flex;
     flex-direction: row;
@@ -172,21 +171,25 @@ h3 {
     align-items: center;
     width: 100%;
   }
+
   .item {
     padding: 0.2rem;
   }
+
   .figure {
     display: flex;
     flex-direction: rowy;
     align-items: center;
     justify-content: center;
   }
+
   .info {
     width: 20%;
     height: auto;
     margin: 1rem;
     padding: 1.3rem;
   }
+
   .item-1,
   .item-2 {
     padding: 0.25rem;
