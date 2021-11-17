@@ -139,8 +139,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
 
 d.addEventListener("click", (e) => {
   if (e.target.matches(".links a")) {
-    e.preventDefault();
     loadRandomPokemon(getUlrRandomPokemon());
+    e.preventDefault();
     loadPokemon(e.target.getAttribute("href"));
   }
 });
