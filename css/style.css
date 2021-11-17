@@ -173,6 +173,7 @@ h3 {
   }
 
   .item {
+    flex-direction: column;
     padding: 0.2rem;
   }
 
@@ -193,5 +194,15 @@ h3 {
   .item-1,
   .item-2 {
     padding: 0.25rem;
+  }
+
+  .item-1 {
+    font-size: 0.8rem;
+  }
+
+  .info-poke {
+    display: grid;
+    grid-template-columns: repeat(2, 47%);
+    grid-gap: 1rem;
   }
 }
